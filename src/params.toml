@@ -1,0 +1,10 @@
+
+
+embedding_model = "text-embedding-ada-002"
+gpt_model = 'gpt-3.5-turbo'
+pinecone_index = "ipcc"
+urls = ["https://report.ipcc.ch/ar6syr/pdf/IPCC_AR6_SYR_LongerReport.pdf",
+"https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_FullReport.pdf",
+"https://report.ipcc.ch/ar6/wg2/IPCC_AR6_WGII_FullReport.pdf",
+"https://report.ipcc.ch/ar6/wg1/IPCC_AR6_WGI_FullReport.pdf"
+]

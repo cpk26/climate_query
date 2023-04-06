@@ -8,7 +8,7 @@ if (!process.env.PINECONE_INDEX) {
 
 const PINECONE_INDEX = process.env.PINECONE_INDEX ?? '';
 
-const PINECONE_NAME_SPACE = 'pdf-test'; //namespace is optional for your vectors
+const PINECONE_NAME_SPACE = ''; //namespace is optional for your vectors
 
 // export { PINECONE_INDEX, PINECONE_NAME_SPACE };
-export { PINECONE_INDEX };
+export { PINECONE_INDEX, PINECONE_NAME_SPACE};

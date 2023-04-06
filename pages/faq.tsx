@@ -1,5 +1,6 @@
 import Layout from '@/components/layout';
 import styles from '@/styles/FAQ.module.css';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -47,8 +48,8 @@ export default function Home() {
               What technologies are used?
             </h2>
             <p>
-            The key technologies are OpenAI's large language models, LangChain, and Pinecone. The frontend is 
-            adapted from this <a href="https://github.com/mayooear/gpt4-pdf-chatbot-langchain">repository</a>.
+            The key technologies are OpenAI&apos;s large language models, LangChain, and Pinecone. The frontend is 
+            adapted from this <Link href="https://github.com/mayooear/gpt4-pdf-chatbot-langchain">repository</Link>.
             </p>
           </div>
           <div className={styles.cloud}>
@@ -58,7 +59,7 @@ export default function Home() {
             <p>
             This depends on the query! At a high level, we are not asking the large-language model (ChatGPT) for the answer directly.
             Instead we are searching for the relevant information, and then asking the model to synthesize the information. This means
-            that the answers aren't likely fictitious, but depend highly on the effectiveness of our information retrieval. As with many AI projects, getting
+            that the answers aren&apos;t likely fictitious, but depend highly on the effectiveness of our information retrieval. As with many AI projects, getting
             from 0 to proof-of-concept is one step, but optimizing the system further is progressively harder. Please reach out if
             this is of interest or relevance to you.
             </p>
@@ -76,7 +77,7 @@ export default function Home() {
               Who made the site and can I get in contact?
             </h2>
             <p>
-                This site was created by <a href="https://ckoziol.com">Conrad Koziol</a>. Comments or feedback are welcome. I can be reached at ckoziol@gmail.com or @cpkoziol.
+                This site was created by <Link href="https://ckoziol.com">Conrad Koziol</Link>. Comments or feedback are welcome. I can be reached at ckoziol@gmail.com or @cpkoziol.
             </p>
           </div>
           <div className={styles.cloud}>
@@ -84,7 +85,7 @@ export default function Home() {
               Is there a GitHub repository that I could look?
             </h2>
             <p>
-              The code to create this site is available here.
+              The code to create this site is available <Link href="https://github.com/cpk26/climate_query">here</Link>.
             </p>
           </div>
         </main>

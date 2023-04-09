@@ -85,17 +85,18 @@ embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key, model=embedding_mod
 
 # %%
 
-# Populate index from new instance
-# if pinecone_index in pinecone.list_indexes():
-#     pinecone.delete_index(pinecone_index)
-# db = Pinecone.from_documents(texts, embeddings,index_name=pinecone_index)
+# Populate index from new instance (Comment out to prevent overwriting)
+if pinecone_index in pinecone.list_indexes():
+    pinecone.delete_index(pinecone_index)
+db = Pinecone.from_documents(texts, embeddings,index_name=pinecone_index)
 
 # %%
+
+# Lower level code implementation. See: https://docs.pinecone.io/docs/openai 
+
 # if pinecone_index not in pinecone.list_indexes():
 #     pinecone.create_index(pinecone_index, dimension=openai_embed_dim)
 # index = pinecone.Index(pinecone_index)
-
-# For lower level code see: https://docs.pinecone.io/docs/openai
 
 # batch_size = 32  # process everything in batches of 32
 # for i in tqdm(range(0, len(texts), batch_size)):

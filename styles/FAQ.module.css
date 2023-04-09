@@ -240,12 +240,12 @@
 @media (max-width: 600px) {
   .main {
     padding: 1rem;
-    max-height: 90vh;
+    overflow-y: scroll;
   }
 
   .cloud {
     width: 22rem;
-    height: 28rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
   .textarea {
     width: 22rem;
